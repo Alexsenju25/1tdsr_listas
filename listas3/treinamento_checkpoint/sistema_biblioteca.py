@@ -17,12 +17,13 @@ while opcao != 6:
         leitor = input("CPF do leitor: ")
         print("Disponivel a partir do dia: 25/04/2024")
         confirmacao = input("Deseja reservar (s/n)")
+        
+        while confirmacao != "s" and confirmacao !="n":
+            print("Opção errada, tente novamente.")
         if confirmacao == "s":
             print("Livro reservado, obrigado!")
         else:
             print("Livro não reservado obrigado")
-        while confirmacao != "s" or "n":
-            print("Opção errada, tente novamente.")
     elif opcao == 2:
         nome_livro = int(input("Digite o nome do livro: "))
     elif opcao == 3:
